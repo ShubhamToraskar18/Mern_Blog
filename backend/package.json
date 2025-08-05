@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "blog application",
+  "type": "module",
+  "keywords": [
+    "mern",
+    "blog",
+    "backend"
+  ],
+  "license": "ISC",
+  "author": "Shubham",
+  "main": "index.js",
+  "scripts": {
+    "dev": " -r dotenv/config --experimental-json-modules nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.0"
+  }
+}
