@@ -12,7 +12,7 @@
   "author": "Shubham",
   "main": "index.js",
   "scripts": {
-    "dev": " -r dotenv/config --experimental-json-modules nodemon src/index.js"
+    "dev": " nodemon -r dotenv/config --experimental-json-modules  src/index.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.10",
