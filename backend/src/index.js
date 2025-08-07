@@ -5,6 +5,19 @@ dotenv.config({
     path: './.env'
 })
 
-import connectionDB from './db/databaseConnection.js';
 
-connectionDB();
+import express from 'express';
+const app = express();
+
+import connectionDB from './db/databaseConnection.js';
+connectionDB()
+.then(() => {
+    app.listen(process.env.PORT,() => {
+    console.log("Sever running on port",process.env.PORT);
+    });
+})
+.catch((error) => {
+    console.log("Server connection failed:",error)
+});
+
+

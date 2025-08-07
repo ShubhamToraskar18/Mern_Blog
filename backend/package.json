@@ -19,7 +19,10 @@
     "prettier": "^3.6.2"
   },
   "dependencies": {
+    "cloudinary": "^2.7.0",
     "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
     "mongodb": "^6.18.0",
     "mongoose": "^8.17.0"
   }
